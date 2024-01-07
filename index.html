@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>How much energy does it have?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <img
+        src="sv-art-earth-removebg-preview.png"
+        alt="sv-art-earth"
+        id="earth"
+      />
+      <img src="atom-no-bg.png" alt="atom-no-bg" id="atom" />
+      <h1>How much energy does it have?</h1>
+      <div id="main">
+        <p>A</p>
+        <select name="objectDropdown" id="objectDropdown">
+          <option value="neutrino">Neutrino</option>
+          <option value="upQuark">Up Quark</option>
+          <option value="electron">Electron</option>
+          <option value="proton">Proton</option>
+          <option value="uraniumAtom">Uranium Atom</option>
+          <option value="glucoseMolecule">Glucose Molecule</option>
+          <option value="Ant">Ant</option>
+          <option value="pea">Pea</option>
+          <option value="marble">Marble</option>
+          <option value="football">Football</option>
+          <option value="human">Human</option>
+          <option value="car">Car</option>
+          <option value="freightTrain">Freight Train</option>
+          <option value="burjKhalifa">Burj Khalifa</option>
+          <option value="moon">Moon</option>
+          <option value="earth">Earth</option>
+          <option value="jupiter">Jupiter</option>
+          <option value="sun">Sun</option>
+          <option value="milkyWay">Milky Way</option>
+          <option value="uyScuti">UY Scuti</option>
+          <option value="largestBlackHole">Largest Black Hole</option>
+          <option value="neutronStar">Neutron Star</option>
+        </select>
+        <p>travelling at</p>
+        <input type="number" id="speedInput" />
+        <select name="velocityUnitDropdown" id="velocityUnitDropdown">
+          <option value="ms">m/s</option>
+          <option value="kph">kph</option>
+          <option value="mph">mph</option>
+        </select>
+      </div>
+      <button class="calculate" onclick="calculate()">Calculate</button>
+      <h2 id="energyDisplay">Some Joules</h2>
+    </div>
+  </body>
+</html>

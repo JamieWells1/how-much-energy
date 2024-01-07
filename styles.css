@@ -1,0 +1,117 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+body,
+html {
+  height: 95%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  color: white;
+  background-color: rgb(16, 9, 41);
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(60, 161, 60);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(75, 189, 75);
+  cursor: pointer;
+}
+
+select {
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgb(207, 207, 207);
+}
+
+input:focus {
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  max-width: 80%;
+}
+
+#page {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  height: fit-content;
+  margin-top: 50px;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  max-width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
+
+#earth {
+  left: 50px;
+  bottom: 60px;
+}
+
+#atom {
+  right: 50px;
+  top: 60px;
+}
+
+@media screen and (max-width: 920px) {
+  #atom,
+  #earth {
+    display: none;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #main {
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+
+  button {
+  }
+}
